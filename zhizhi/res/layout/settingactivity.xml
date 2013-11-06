@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/backButton"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_setting"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/SettingLonginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16dp"
+        android:text="设置登录密码" />
+    
+    
+    <Button
+        android:id="@+id/SettingPayPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="@string/string_zhizhi_modify_pay_password" />
+    
+    
+    <Button
+        android:id="@+id/SettingBankinfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="设置银行信息" />
+
+ 
+    <Button
+        android:id="@+id/SettingPersoninfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="修改个人信息" />
+    
+    
+    <Button
+        android:id="@+id/ApplyToTercher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="申请成为教师" />
+    
+    <Button
+        android:id="@+id/SetCallPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="设置通话价格" />
+
+</LinearLayout>

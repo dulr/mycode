@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/imageView_arrow"
+            android:layout_toRightOf="@+id/imageView_item_image"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="TextView"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextViewsdl;dsj;ldsjjdsdskldsklkdslkldskldsd;fskldskjldfskjldfskjlkldfsjkljdskjldskjldfskjldfskjldfs" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

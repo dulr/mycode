@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_zhizhi_back">返回</string>
+    <string name="string_zhizhi_about">关于</string>
+    <string name="string_zhizhi_wodefensi">我的粉丝</string>
+    <string name="string_zhizhi_tixian">提现</string>
+    <string name="string_zhizhi_message">消息</string>
+    <string name="string_zhizhi_setting">设置</string>
+    <string name="string_zhizhi_settingprices">设置通话价格</string>
+    <string name="string_zhizhi_register">注册：</string>
+    <string name="string_zhizhi_register_first">第一步</string>
+    <string name="string_zhizhi_myspace">我的空间</string>
+    <string name="string_zhizhi_modify_infor">修改信息</string>
+    <string name="string_zhizhi_modify_pay_password">设置支付密码</string>
+    <string name="string_zhizhi_modify_pay_password1">支付密码用于提现，位安全起见，请最好设为和登录密码不同。</string>
+    <string name="string_zhizhi_modify_pay_password2">密码由6~16位数字、字母或符号组成</string>
+    <string name="string_zhizhi_modify_pay_password3">当前密码：</string>
+    <string name="string_zhizhi_modify_pay_password4">新密码：  </string>
+    <string name="string_zhizhi_setting_login_password">设置登录密码</string>
+    <string name="string_zhizhi_payfor_infor">交易明细</string>
+    <string name="string_zhizhi_help">帮助</string>
+    <string name="string_zhizhi_chongzhi">充值</string>
+    <string name="string_zhizhi_bianji">编辑</string>
+    <string name="string_zhizhi_bankinfor">银行信息</string>
+    <string name="string_zhizhi_accountinfor">资金帐户</string>
+    <string name="string_zhizhi_frequentlyquestions">常见问题</string>
+    <string name="string_zhizhi_xingbie">性别：</string>
+    <string name="string_zhizhi_man">男</string>
+    <string name="string_zhizhi_women">女</string>
+    <string name="string_zhizhi_birthday">出生年月：</string>
+    <string name="string_zhizhi_nation">国籍：</string>
+    <string name="string_zhizhi_muqian_place">目前所在地：</string>
+    <string name="string_zhizhi_nation_word">母语:</string>
+    <string name="string_zhizhi_other_word">还会其他语言:</string>
+    <string name="string_zhizhi_chinese_lever">中文水平：</string>
+    <string name="string_zhizhi_zero_lever">零基础</string>
+    <string name="string_zhizhi_first_lever">初级（会简单会话）</string>
+    <string name="string_zhizhi_second_lever">中级（比较流利）</string>
+    <string name="string_zhizhi_jingtong">精通</string>
+    <string name="string_zhizhi_acountinfor">资金帐户：</string>
+    <string name="string_zhizhi_jinru">进入</string>
+    <string name="string_zhizhi_account_yu_e">帐户余额：</string>
+    <string name="string_zhizhi_base_infor">基本数据：</string>
+    <string name="string_zhizhi_student_pingyu">学生的评语：</string>
+    <string name="string_zhizhi_modify_ziliao">编辑资料</string>
+    <string name="string_zhizhi_person_qianming">个性签名：</string>
+    <string name="string_zhizhi_queding">确定</string>
+    <string name="string_zhizhi_forget_password">忘记密码</string>
+    <string name="string_zhizhi_all_teacher">全部教师</string>
+    <string name="string_zhizhi_all_user">社区用户</string>
+    <string name="string_zhizhi_near_pearson">最近联系人</string>
+    <string name="string_zhizhi_look_pearson">我关注的人</string>
+    <string name="string_zhizhi_teacher">教师</string>
+    <string name="string_zhizhi_student">学生</string>
+    <string name="string_zhizhi_shaixuan">筛选</string>
+    <string name="string_zhizhi_lianluoren">联络人</string>
+    <string name="string_zhizhi_all">全部</string>
+    <string name="string_zhizhi_more">更多</string>
+    <string name="string_zhizhi_longin">账号:    </string>
+    <string name="string_zhizhi_longin1">密码:    </string>
+    <string name="string_zhizhi_longin2">忘记密码？</string>
+    <string name="string_zhizhi_longin3">创建新账号</string>
+	<string name="string_zhizhi_longin4">登录</string>
+	<string name="string_zhizhi_english_lever">英语水平：</string>
+	<string name="string_zhizhi_english_lever1">初级（未达到4级）</string>
+	<string name="string_zhizhi_english_lever2">中级（4~6级水平）</string>
+	<string name="string_zhizhi_english_lever3">高级（8级水平）</string>
+	<string name="string_zhizhi_i_have_read">我已阅读并接受本应用的服务条款 </string>
+	<string name="string_zhizhi_immediately_reg">立即注册</string>
+	<string name="string_zhizhi_reg_success">恭喜，注册成功！请完善您的档案，以便获得更好的服务!</string>
+    <string name="string_zhizhi_setting_bank_infor">设置银行信息</string>
+    <string name="string_zhizhi_teacher_lever">教学经验：</string>
+    
+    <string name="string_zhizhi_qa1">【针对学生的FQA】</string>
+    
+    <string name="string_zhizhi_qa2">Q：“知之”英语口语随时聊（以下简称“知之”）是什么？</string>
+    <string name="string_zhizhi_qa3">A：“知之”是通过智能手机与真人外教口语一对一、按时长付费的英语口语培训第一品牌。只要您打开手机上的“知之”软件，就可以随时随地选择一位在线的外教进行一对一口语练习。</string>
+    
+    <string name="string_zhizhi_qa4">Q：“知之”全部是一对一教学吗？</string>
+    <string name="string_zhizhi_qa5">A：是的。我们全部是与真人外教的一对一教学，不是录制的视频课程。</string>
+    
+    <string name="string_zhizhi_qa6">Q：我可以试听吗？</string>
+    <string name="string_zhizhi_qa7">A：可以的。您只需花30秒注册会员就能马上免费获得30元的课程费，选择任意一位老师进行对练。</string>
+    
+    <string name="string_zhizhi_qa8">Q：“知之”的课程适合什么样的学员？</string>
+    <string name="string_zhizhi_qa9">A：我们提供外教一对一的课程，只要您想说英语敢于说英语，任何年龄段的学员都可以在这里学习。我们的学员年龄跨度从四岁到五十多岁各个年龄段各种学习需求的都有。</string>
+    
+    <string name="string_zhizhi_qa10">Q：我可以选择什么时间进行上课？需要预约吗？</string>
+    <string name="string_zhizhi_qa11">A：“知之”的优势就在于随时随地。只要您有手机在手，就能随时随地和电话另一端的老师进行练习。无需预约，无需固定场所；通话时长也可以灵活处理。我们保证24小时有外教在线，即使您凌晨三点想练英文，也一样有人陪您练。</string>
+   
+    <string name="string_zhizhi_qa12">Q：“知之”的老师全部是外教吗？ </string>
+    <string name="string_zhizhi_qa13">A：绝大多数是。另外，针对一些用户期望能够同时用汉语和老师沟通，我们也安排了一些英文非常流利的中国老师在线，他们的英语口语虽然不如老外流利、地道，但是更懂中国人学英语的难点，对初学英语者来说更加合适。</string>
+   
+    <string name="string_zhizhi_qa14">Q：外教老师会不会说中文？</string>
+    <string name="string_zhizhi_qa15">A：大多数外教不会说中文，但也有一部分外教是中国的留学生，能说一定水平的中文，甚至有外教的中文说得非常流利。他们的中文水平在基本信息里都有描述。</string>
+   
+    <string name="string_zhizhi_qa16">Q：学生可以自由选择外教老师吗？</string>
+    <string name="string_zhizhi_qa17">A：可以。打开“知之”，您可以和任何一位在线的老师进行对话。</string>
+   
+    <string name="string_zhizhi_qa18">Q：在线学习时使用教材吗？</string>
+    <string name="string_zhizhi_qa19">A：您可以不用任何教材和外教随便聊天，也可以根据您的需要以及老师的能力，选择某种课程。除了“知之”会免费推荐一些适合碎片化时间学习的系列小课程之外，您也可以和老师一起选择中国学习者所熟悉的教材，如《新概念英语》、《剑桥国际英语教程》等。</string>
+   
+    <string name="string_zhizhi_qa20">Q：免费试用后，如果需要继续学习，课费该如何支付？</string>
+    <string name="string_zhizhi_qa21">A：我们提供在线支付通道（网银、信用卡、支付宝等）对账号进行充值。在线充值成功后，您就可以立即和老师聊天。费用将按照通话时长和老师的价格自动进行扣费。</string>
+   
+    <string name="string_zhizhi_qa22">Q：如果有其他问题需要咨询，该如何联系？</string>
+    <string name="string_zhizhi_qa23">A：我们有非常专业的客服人员来为您提供咨询服务，电话010-62513166，qq：79798118！</string>
+   
+    <string name="string_zhizhi_qa24">【针对老师的FQA】</string>
+    
+    <string name="string_zhizhi_qa25">Q：为什么要成为“知之”的老师？</string>
+    <string name="string_zhizhi_qa26">A：1、为了随时随地挣钱。“知之”上有大量的学生愿意为练口语而付费，只要您英语口语纯正并有一定教学经验，就可以利用业余时间挣钱。2、为了快乐地工作。作为一个外语老师，在学校教学太受束缚，在机构代课太受剥削，并且无数宝贵的时间浪费在了去上课的路上……这样的生活是我们想要的吗？不！工作应该是一种快乐，We teach because we love teaching!（我们教英语是因为我们喜欢教英语）想象一下，如果我们随时随地，只要有余暇，想上课就能上课，想挣钱就能挣钱，那是多么快乐的事情！</string>
+    
+    <string name="string_zhizhi_qa27">Q：如何成为“知之”的老师？</string>
+    <string name="string_zhizhi_qa28">A：Step 1. 注册并填写教师认证资料+申请成为老师;Step 2. “知之”管理部审核并批准申请，则您将出现学生课间的在教师列表里;Step 3. 打开“知之”，当有学生给您打电话时，您就可以上课并挣钱了</string>
+    <string name="string_zhizhi_qa29">Q：老师的收入如何获得？</string>
+    <string name="string_zhizhi_qa30">A：学生需要向“知之”账号进行充值来支付学费。学费仲有90％为您的收入，“知之”运营方紧收取10％的管理费。您的收入将根据您的通话时长和课时费，实时划拨到您的“知之”帐号。在您的收入超过100元之后，您可以随时申请提现，“知之”运营方在收到您的提现申请之后，24小时之内就将钱打入您指定的帐号。</string>
+    <string name="string_zhizhi_qa31">Q：老师的课时费是怎样确定的？</string>
+    <string name="string_zhizhi_qa32">A：老师上岗之前，我们会有专门的教务顾问对您进行细致了解，并根据您的情况和您的意愿为您确定一个基础课时费。之后，随着您上课的课时数积累，根据您所获得的积分以及学生评价，您将获得相应“等级”，该等级与一定的课时费范围进行对应，在该范围内，您可以按照您的意愿，随意确定您的课时费。具体数额在“设置”里设定即可。</string>
+    
+    <string name="string_zhizhi_qa33">Q：“知之”为老师提供什么服务？</string>
+    <string name="string_zhizhi_qa34">A：1、“知之”帮助老师做推广，让更多学生可以知道“知之”，知道您的服务；
+2、为老师建立评价体系，留下您的成长轨迹。“知之”建立了一套非常完善的老师评级体系，每位学生上完课后都可以给老师打分、写评语，随着老师课时数的积累，老师可以逐步从讲师晋升到副教授，教授甚至特级教授。相应的，评级越高老师自然就会越受学生们追捧！
+3、专职教务顾问为老师7*24小时服务。我们有非常专业的教务人员来为老师提供咨询服务，电话010-62513166，qq：79798118！
+    </string>
+<string-array name="pref_handle_outcall_values1">
+<item>Off</item>
+<item>On demand</item>
+<item>Always</item>
+</string-array>
+</resources>

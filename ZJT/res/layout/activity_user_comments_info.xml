@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:id="@+id/textViewlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表评论"
+             android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/User_comments_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#919191" />
+
+        <TextView
+            android:id="@+id/User_comments_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tltlerect"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#919191" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayoutHeader"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextCommentscontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+         android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10" android:gravity="top"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

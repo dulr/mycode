@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/title" 
+        	android:id="@+id/RelativeLayoutHeader">
+
+       	 	<TextView
+            	android:id="@+id/textViewlogin"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	android:gravity="center"
+            	android:textSize="25dp"
+            	android:textColor="#FFFFFF"
+            	android:text="用户昵称" />
+
+        	<TextView
+            	android:id="@+id/User_msg_back"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:layout_marginLeft="10dp"
+            	android:background="@drawable/back"
+            	android:gravity="center"
+            	android:clickable="true"
+            	android:focusable="true"
+            	android:textColor="#919191"
+            	android:text="返回" />
+
+        	<TextView
+            	android:id="@+id/User_msg_delete"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:layout_marginRight="10dp"
+            	android:background="@drawable/tltlerect"
+            	android:gravity="center"
+            	android:clickable="true"
+            	android:focusable="true"
+            	android:textColor="#919191"
+            	android:text="删除" />
+    	</RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListViewUserMsgList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayoutHeader"
+        android:layout_above="@+id/RelativeLayoutSend"
+        android:clickable="true"
+        android:divider="#f8f8ff"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutSend"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/editTextMessageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonMessagesend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="发送" />
+       
+    </RelativeLayout>
+
+    <ViewStub   
+    android:id="@+id/viewstub_user_msg_list_option"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:layout_marginLeft="5dip"  
+    android:layout_marginRight="5dip" 
+    android:layout_alignParentBottom="true"
+    android:visibility="gone" 
+    android:layout="@layout/activity_user_msg_list_option"/> 
+    
+        <ViewStub   
+    android:id="@+id/viewstub_user_msg_list_delete"  
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:layout_marginLeft="5dip"  
+    android:layout_marginRight="5dip" 
+    android:layout_alignParentBottom="true"
+    android:visibility="gone" 
+    android:layout="@layout/activity_user_msg_list_delete"/> 
+    
+</RelativeLayout>

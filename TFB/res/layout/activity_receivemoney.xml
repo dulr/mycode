@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calculator_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calculator_head" >
+
+        <TextView
+            android:id="@+id/textViewlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="手机充值"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/head_back_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/history_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="历史"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/calculato_screen" >
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="2013-10-10 星期二"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <EditText
+             android:inputType="number" 
+             android:maxLength="15"
+            android:digits="1234567890."
+            android:id="@+id/textViewInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewDate"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="0.00"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textViewJiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="金额：零元整"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageViewtClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewJiner"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/clear_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

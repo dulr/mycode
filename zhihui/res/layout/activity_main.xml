@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bar"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/top_bar_1" >
+
+            <TextView
+                android:id="@+id/textView_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="#ffffff"
+                android:textSize="26dp" />
+
+            <ImageView
+                android:id="@+id/imageView_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_icon"
+                android:textColor="#ffffff"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/top_bar_2"
+            android:gravity="center" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/imageViewtrade_left_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/trade_left_button"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="供应列表"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/imageViewtrade_right_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageViewtrade_left_button"
+                android:background="@drawable/trade_right_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="求购列表"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.zhihui.zhihuicity.ctrl.MyGallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/top_bar"
+        android:background="@drawable/gallery_bg"
+        android:spacing="10dp"
+        android:unselectedAlpha="0.5" />
+
+    
+
+        <com.zhihui.zhihuicity.ctrl.XListView
+            android:id="@+id/xListView"
+            android:layout_below="@+id/gallery"
+            android:layout_above="@+id/mainview_radiobutton_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="true"
+            
+            android:cacheColorHint="#00000000" >
+
+    </com.zhihui.zhihuicity.ctrl.XListView>
+    
+        
+    <RadioGroup
+        android:id="@+id/mainview_radiobutton_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bar"
+        android:checkedButton="@+id/radiobutton_1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- View complete history Radio Button -->
+
+        <RadioButton
+            android:id="@+id/radiobutton_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton1_drawable_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/radiobutton1_color_selector"
+            android:textSize="@dimen/radiobutton_text_size" />
+
+        <!-- View history using date range Radio Button -->
+
+        <RadioButton
+            android:id="@+id/radiobutton_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton2_drawable_selector"
+            android:gravity="center"
+            android:text="商品"
+            android:textColor="@color/radiobutton1_color_selector"
+            android:textSize="@dimen/radiobutton_text_size" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton3_drawable_selector"
+            android:gravity="center"
+            android:text="黄页"
+            android:textColor="@color/radiobutton1_color_selector"
+            android:textSize="@dimen/radiobutton_text_size" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton4_drawable_selector"
+            android:gravity="center_horizontal"
+            android:text="会员"
+            android:textColor="@color/radiobutton1_color_selector"
+            android:textSize="@dimen/radiobutton_text_size" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_background_selector"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobutton5_drawable_selector"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/radiobutton1_color_selector"
+            android:textSize="@dimen/radiobutton_text_size" />
+    </RadioGroup>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/backButton"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_tixian"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tixuanStep1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="14dp"
+            android:text="您尚未填写指定的收款银行卡信息，请先填写银行信息。 "
+            android:textColor="@color/color_text_black" />
+
+        <Button
+            android:id="@+id/buttonSetBankInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="填写银行卡信息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tixuanStep2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="您尚未设置提现密码，请先设置： "
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="（支付密码用于提现，位安全起见，请最好设为和登录密码不同。） "
+            android:textColor="@color/color_text_black" />
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="提现密码："
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/xueLi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="再输一遍："
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/xueLi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="密码由6~16位数字、字母或符号组成 "
+            android:textColor="@color/color_text_black" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/string_zhizhi_queding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tixuanStep3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收款行信息：           修改 "
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="中国工商银行 "
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="账号：23323323232332 "
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="开户人：王小二 "
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="开户行地址：中国工商银行北京市海淀区支行XX分理处 "
+            android:textColor="@color/color_text_black" />
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="提现金额："
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/xueLi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="可提现金额为2001.34元 "
+            android:textColor="@color/color_text_black" />
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="支付密码："
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/xueLi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp" >
+            </EditText>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="每笔最多10000元，预计3天内到账。 "
+            android:textColor="@color/color_text_black" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/string_zhizhi_queding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tixuanStep4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="您已经成功地向系统申请提现1200元！ "
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="客服审核通过之后，将向您尾号的3453的中国工商银行卡汇款。预计3天之内到达。谢谢！ "
+            android:textColor="@color/color_text_black" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/string_zhizhi_back" />
+    </LinearLayout>
+
+</LinearLayout>

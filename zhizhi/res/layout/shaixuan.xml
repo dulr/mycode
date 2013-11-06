@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="筛选教师"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="照片"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewPhoto" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewXingBie"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="性别"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerXingbie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewXingBie" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewCity"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="所在城市"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewCity" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewGuoji"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="国籍"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerGuoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewGuoji" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewKeshiFei"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="课时费"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerKeshiFei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewKeshiFei" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewJingyan"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="教学经验"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerJingyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewJingyan" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewZhongwenShuiping"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="中文水平"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerZhongwenShuiping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewZhongwenShuiping" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewJiaoshiZheng"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="教师资格证"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerJiaoshiZheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewJiaoshiZheng" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textviewIsonline"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="是否在线"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerIsonline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textviewIsonline" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shaixuanItem9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/checkBoxSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="保存选择条件"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/editTextSave"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/checkBoxSave"
+                    android:hint="条件1" >
+                </EditText>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonOK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="17dp"
+                android:text="@string/string_zhizhi_queding" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

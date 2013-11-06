@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/backButton"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_chongzhi"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chongzhiStep1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewXuanzeYinhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:text="请输入充值金额："
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/exitTextChongzhiJinEr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewXuanzeYinhang"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:digits="1234567890."
+                android:inputType="numberDecimal"
+                android:layout_marginTop="10dp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textViewXuanzeYinhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入验证码："
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/editTextYanzhengma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewXuanzeYinhang"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:text="看不清换一张"
+                android:textColor="@color/color_text_black" />
+
+            <ImageView
+                android:id="@+id/xueLi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/u24_normal" >
+            </ImageView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonStep1Confirm"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:text="@string/string_zhizhi_queding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chongzhiStep2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Michael（编号：422312）
+
+您正在向您的账号充值：
+ " />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="300元。 " />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提示：支付过程中见向您的手机13581606890发送短信 " />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择支付方式： " />
+
+        <LinearLayout
+            android:id="@+id/xiaoxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="信用卡快捷支付" />
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xiaoxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="储蓄卡快捷支付" />
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=">" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xiaoxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="支付宝账号支付" />
+
+            <TextView
+                android:id="@+id/jifen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=">" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chongzhiStep3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值成功。 " />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="本次充值：300元。 " />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户余额：400元。 " />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/string_zhizhi_queding" />
+    </LinearLayout>
+
+</LinearLayout>

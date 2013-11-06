@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00A6DA"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:text="@string/string_zhizhi_longin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:text="10010" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_zhizhi_longin1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:text="10010" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/buttonForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/button1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:textColor="#0000FF"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/string_zhizhi_longin2" />
+
+            <TextView
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#0000FF"
+                android:text="@string/string_zhizhi_longin3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop ="15dp"
+            android:background="@drawable/login_button_selector"
+            android:text="@string/string_zhizhi_longin4" />
+    </LinearLayout>
+
+</RelativeLayout>

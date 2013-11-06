@@ -1,0 +1,320 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dingbu_bg" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="电费缴纳"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/fanhui_03"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="返回" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout0"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/kuangweixuanzhong" >
+
+        <TextView
+            android:id="@+id/textViewlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="所在城市"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bianmin_jiaofei_xiayiye"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/kuangweixuanzhong" >
+
+        <TextView
+            android:id="@+id/textViewlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="缴费公司"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/jiantou_07"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kuangweixuanzhong" >
+
+        <TextView
+            android:id="@+id/textViewlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="缴费账户"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/kuangxuanzhong" >
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="缴费金额"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/kuangweixuanzhong" >
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="银行帐户"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp" >
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/huafeijinge_03"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="30"
+            android:layout_weight="1"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/huafeijinge_03"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="50"
+            android:layout_weight="1"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/huafeijinge_03"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="100"
+            android:layout_weight="1"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/huafeijinge_03"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="200"
+            android:layout_weight="1"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+        
+         <TextView
+            android:id="@+id/Login_button"
+        android:background="@drawable/huafeijinge_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="300"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#919191" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonQueDing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/jiaofei_queding"
+        android:text="确定"
+        android:textSize="18dp" />
+
+</RelativeLayout>

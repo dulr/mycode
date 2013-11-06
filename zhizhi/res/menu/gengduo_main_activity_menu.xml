@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/munu_shezhi"
+        android:title="设置">
+    </item>
+
+        <item
+        android:id="@+id/munu_tonghuashezhi"
+        android:title="通话设置">
+    </item>
+
+    <item
+        android:id="@+id/munu_bangzhu"
+        android:title="帮助">
+    </item>
+    <item
+        android:id="@+id/munu_guanyu"
+        android:title="关于">
+    </item>
+  <item
+        android:id="@+id/munu_zijinzhanghu"
+        android:title="资金帐户">
+    </item>
+      <item
+        android:id="@+id/munu_tuichu"
+        android:title="退出">
+    </item>
+</menu>

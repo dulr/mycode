@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/backButton"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_message"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personItem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@drawable/item_selector"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/personImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/u7_normal" />
+
+        <LinearLayout
+            android:id="@+id/personstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/personImage"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/stateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_online" />
+
+                <TextView
+                    android:id="@+id/textView122222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/stateImage"
+                    android:text="David。Lee"
+                    android:textColor="@color/color_text_black" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/textView122"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="昨天"
+                    android:textColor="@color/color_text_black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personImage"
+            android:text="Hi，你好，请问你什么时候上课？能教我新概念英语吗？"
+            android:textColor="@color/color_text_black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/personItem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@drawable/item_selector"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@+id/personImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/u7_normal" />
+
+        <LinearLayout
+            android:id="@+id/personstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/personImage"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <ImageView
+                    android:id="@+id/stateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/person_online" />
+
+                <TextView
+                    android:id="@+id/textView122222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/stateImage"
+                    android:text="David。Lee"
+                    android:textColor="@color/color_text_black" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/textView122"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="昨天"
+                    android:textColor="@color/color_text_black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personImage"
+            android:text="Hi，今天天气真好，能出来一起练英语吗？"
+            android:textColor="@color/color_text_black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff" />
+
+</LinearLayout>

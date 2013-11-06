@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/backButton"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="建设中"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/top_bar_save_selector"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/touxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="头像："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <ImageView
+                    android:id="@+id/personImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toLeftOf="@+id/textViewjiantou"
+                    android:background="@drawable/detail" />
+
+                <TextView
+                    android:id="@+id/textViewjiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text=">" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:text="昵称：  Tom"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewjiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text=">" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:text="个人签名：今天天气真好！心情也好！"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewjiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text=">" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/string_zhizhi_xingbie"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroupSex"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:layout_x="3px"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonSexMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:textSize="14dp"
+                        android:text="@string/string_zhizhi_man"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonFeMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.28"
+                        android:textSize="14dp"
+                        android:text="@string/string_zhizhi_women"
+                        android:textColor="@color/color_text_black" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/string_zhizhi_birthday"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/chushengnian"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="105dp"
+                    android:textSize="14dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/chushengyue"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:text="@string/string_zhizhi_nation"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/guoji"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:text="@string/string_zhizhi_muqian_place"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/muqiansuozaidi"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:text="@string/string_zhizhi_nation_word"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/muyu"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:text="@string/string_zhizhi_other_word"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/qitayuyan"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_chinese_lever"
+                    android:textSize="17dp"
+                    android:textColor="@color/color_text_black" />
+
+                <RadioGroup
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/radiogroupChineseLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="3px"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonChineseLevel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_zero_lever"
+                         android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonChineseLevel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_first_lever"
+                         android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonChineseLevel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_second_lever"
+                         android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonChineseLevel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                         android:textSize="14dp"
+                        android:text="@string/string_zhizhi_jingtong"
+                        android:textColor="@color/color_text_black" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="教学经验："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/jiaoxuejingyan"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="学历："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/xueli"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16dp"
+                    android:text="专业："
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/editTextZhuanye"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="职业："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/editTextZhiYe"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" >
+                </EditText>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/techang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text=" 特长："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="英语口语"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="阅读和写作"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="语法"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="发音"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="托福"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="雅思"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonTeChang7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="商务英语"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/techang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="可教学生类型："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="幼儿园"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="小学生"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="初中生"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="高中生"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="大学生"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="成年人"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentType7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="商务人士"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/techang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="可教学生程度："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentLevel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="初级"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentLevel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="中级"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+
+                <CheckBox
+                    android:id="@+id/radiobuttonStudentLevel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="高级"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_text_black" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewJieshao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="介绍："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewjiantou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewJieshao"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14dp"
+                    android:text="纯正美式发音，年轻有朝气，有两年教学经验， 获得了教师资格证，做过幼儿园教师， 期间也做一对一的私人教学， 教授过Toffel和SAT，很擅长写作，有过一年做英文编辑的经验。 "
+                    android:textColor="@color/color_text_black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewZhenjianzhaopian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="证件照片"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <ImageView
+                    android:id="@+id/ImageZhenjianzhaopian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/textViewZhenjianzhaopian"
+                    android:background="@drawable/u62_normal"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/Imageshenfenzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ImageZhenjianzhaopian"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/textViewZhenjianzhaopian"
+                    android:background="@drawable/u71_normal"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/textViewshanchu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/ImageZhenjianzhaopian"
+                    android:gravity="right"
+                    android:text="删除"
+                    android:textSize="14dp"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewBaomi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewZhenjianzhaopian"
+                    android:layout_marginLeft="30dp"
+                    android:text="（保密）："
+                    android:textSize="14dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Button
+                    android:id="@+id/buttontianjiaZhengjian1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewBaomi"
+                    android:layout_marginLeft="30dp"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewZhenjianzhaopian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="教师资格证："
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <ImageView
+                    android:id="@+id/ImageZhenjianzhaopian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/textViewZhenjianzhaopian"
+                    android:background="@drawable/u67_normal"
+                    android:scaleType="center" />
+
+                <ImageView
+                    android:id="@+id/Imageshenfenzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ImageZhenjianzhaopian"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/textViewZhenjianzhaopian"
+                    android:background="@drawable/u69_normal"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/textViewshanchu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/ImageZhenjianzhaopian"
+                    android:gravity="right"
+                    android:text="删除"
+                    android:textSize="14dp"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewBaoli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewZhenjianzhaopian"
+                    android:layout_marginLeft="30dp"
+                    android:text="（保密）："
+                    android:textSize="14dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Button
+                    android:id="@+id/buttontianjiaZhengjian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewBaoli"
+                    android:layout_marginLeft="30dp"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonTijiaoshenhe"
+                android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal|center_vertical" 
+            		android:layout_marginTop="20dp"
+            		android:gravity="center"
+            		android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_next_selector"
+                    android:text="提交审核" 
+                
+                
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

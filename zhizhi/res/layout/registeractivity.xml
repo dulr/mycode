@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/backButton"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_register"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewRegisterStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/string_zhizhi_register_first"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/registerStep1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+         >
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textviewXuanzeLeixing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="请选择您要注册的用户类型："
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/color_text_black" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textviewXuanzeLeixing"
+                android:layout_marginLeft="20dp"
+                android:layout_x="3px"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radiobuttonStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:checked="true"
+                    android:text="普通用户（学生）"
+                    android:paddingLeft="50dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/color_text_black" />
+
+                <RadioButton
+                    android:id="@+id/radiobuttonTeacher"
+                    android:layout_width="154dp"
+                    android:layout_height="35dp"
+                    android:paddingLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="外语教师"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="14dp" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonStep1Next"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/button_next_selector"
+            android:text="下一步" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registerStep2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+         >
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textviewPhoneNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="*手机号码："
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNum"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="15dp"
+                android:singleLine="true"
+                android:hint="请务必填写真实号码" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="*昵      称："
+                android:textSize="16dp"
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/editTextPetName"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:hint="请输入4~16位字符" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nichaneg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="*创建密码："
+                android:textSize="16dp"
+                android:textColor="@color/color_text_black" />
+
+            <EditText
+                android:id="@+id/editTextPassWord"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:hint="请输入6~16位半角字符"
+                android:textSize="16dp"
+                android:password="true" >
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonStep2Next"
+             android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:background="@drawable/button_next_selector"
+            android:text="下一步" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registerStep3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/nichaneg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/string_zhizhi_xingbie"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroupSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="85dp"
+                        android:layout_x="3px"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radiobuttonSexMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:checked="true"
+                            android:text="@string/string_zhizhi_man"
+                            android:textColor="@color/color_text_black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobuttonfeMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_zhizhi_women"
+                            android:textColor="@color/color_text_black" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nichaneg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/string_zhizhi_muqian_place"
+                        android:textSize="16dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCountry"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="75dp"
+                        android:layout_toLeftOf="@+id/spinner1" >
+                    </Spinner>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nichaneg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16dp"
+                        android:text="@string/string_zhizhi_muqian_place"
+                        android:textColor="@color/color_text_black" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCurrentPlace"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="75dp"
+                        android:layout_toLeftOf="@+id/spinner1" >
+                    </Spinner>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nichaneg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16dp"
+                        android:text="@string/string_zhizhi_birthday"
+                        android:textColor="@color/color_text_black" />
+
+                    <Spinner
+                        android:id="@+id/spinnerBirthYear"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="105dp"
+                        android:layout_toLeftOf="@+id/spinner1" >
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/spinnerBirthMonth"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp" >
+                    </Spinner>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/nichaneg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="17dp"
+                        android:text="@string/string_zhizhi_english_lever"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroupEnglishLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_x="3px"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/radiobutton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_zhizhi_zero_lever"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_zhizhi_english_lever1"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_zhizhi_english_lever2"
+                            android:checked="true"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_zhizhi_english_lever3"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <RadioButton
+                            android:id="@+id/radiobutton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/string_zhizhi_jingtong"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBoxReadServiceItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_i_have_read"
+                    android:textSize="14dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Button
+                    android:id="@+id/buttonStep3Next"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal|center_vertical" 
+            		android:layout_marginTop="30dp"
+            		android:layout_marginBottom="30dp"
+            		android:gravity="center"
+                    android:background="@drawable/button_next_selector"
+                    android:text="@string/string_zhizhi_immediately_reg" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/registerStepWanshanZiliao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_reg_success"
+                    android:textSize ="16dp" 
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text=" 请上传您的头像"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/buttonBendiZhaopian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="本地照片" />
+
+                    <Button
+                        android:id="@+id/buttonPaizhaoShangchuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/buttonBendiZhaopian"
+                        android:text="拍照上传" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/personImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:background="@drawable/u41_normal" />
+
+                <ImageView
+                    android:id="@+id/personImageHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/u39_normal" />
+
+                
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/buttonWanchengZiliaoNext"
+                        android:layout_width="80dp"
+            			android:layout_height="30dp"
+            			android:layout_marginLeft="110dp"
+            			android:layout_marginTop="20dp"
+            			android:gravity="center"
+            			android:textSize="16dp"
+            			android:background="@drawable/button_next_selector"
+                        android:text="下一步" />
+
+                    <TextView
+                        android:id="@+id/textviewTiaoguoTouXiang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_toRightOf="@+id/buttonWanchengZiliaoNext"
+                        android:text="跳过"
+                        android:layout_marginTop="50dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/color_text_green" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/registerStepGerenJianJie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text=" 个人简介"
+            android:textColor="@color/color_text_black" />
+
+        <EditText
+            android:id="@+id/editTextGenRenJianJie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonGeRenJianJieFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

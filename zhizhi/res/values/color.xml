@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="background">#d2d6d9</drawable>
+     <drawable name="color_title_background_drawable">#2ba0d0</drawable>
+    
+    <color name="color_background">#e9e9e9</color>
+    <color name="color_title_background">#2ba0d0</color>
+    <color name="color_text_white">#ffffff</color>
+    <color name="color_text_black">#000000</color>
+    <color name="color_introduce_text_black">#000000</color>
+    <color name="color_myspace_text_black">#000000</color>
+    <color name="color_text_green">#0000ff</color>
+
+</resources>

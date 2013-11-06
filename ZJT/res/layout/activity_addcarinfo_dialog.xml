@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textviewChePaihao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="车  牌  号"
+            android:textColor="#919191"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/buttonChePaiDi"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textviewChePaihao"
+            android:gravity="center"
+            android:background="@drawable/button_small_gray"
+            android:text="京"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/edittextChepaiHao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/buttonChePaiDi"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="P3FM52"
+            android:text="P3FM52"
+            android:textColor="#919191" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textViewFadongjiHao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="发动机号"
+            android:textColor="#919191"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/editTextFadongjiHao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/textViewFadongjiHao"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="ba932289"
+            android:text="ba932289"
+            android:textColor="#919191" >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:background="@drawable/button_mid_gray"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:text="确定"
+            android:background="@drawable/button_mid_green"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="@style/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_myspace"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Mikel"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title" >
+
+                <ImageView
+                    android:id="@+id/personImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/detail" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/personImage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/personImage"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp"
+                        android:weightSum="1" >
+
+                        <ImageView
+                            android:id="@+id/stateImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/person_online" />
+
+                        <TextView
+                            android:id="@+id/textViewMyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="18dp"
+                            android:layout_marginLeft="3dp"
+                            android:textColor="@color/color_myspace_text_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="编号："
+                            android:textColor="@color/color_myspace_text_black" />
+
+                        <TextView
+                            android:id="@+id/textViewMyMid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/color_myspace_text_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="身份："
+                            android:textColor="@color/color_myspace_text_black" />
+
+                        <TextView
+                            android:id="@+id/textViewMyShenFen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/color_myspace_text_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价格："
+                            android:textColor="@color/color_myspace_text_black" />
+
+                        <TextView
+                            android:id="@+id/textViewMyPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/color_myspace_text_black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/jifenxxxx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textViewMyPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="积分：2123"
+                    android:visibility="gone"
+                    android:textColor="@color/color_myspace_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewMyLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewMyPoint"
+                    android:layout_marginLeft="20dp"
+                    android:text="等级："
+                    android:visibility="gone"
+                    android:textColor="@color/color_myspace_text_black" />
+
+                <!--
+                     <ImageView
+                    android:id="@+id/stateImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textViewMyLevel"
+                    android:layout_toRightOf="@+id/textViewMyLevel"
+                    android:background="@drawable/u51_normal" />
+                -->
+
+                <Button
+                    android:id="@+id/mySpaceBianjiZiliao"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="16dp"
+                    android:background="@drawable/chat_recoder_bg"
+                    android:text="@string/string_zhizhi_modify_ziliao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gexing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guanzhuandxiaoxi"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gexingqianming1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_zhizhi_person_qianming"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewMySign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gexingqianming1"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/buttonBianji"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="" >
+
+                </TextView>
+                   <Button
+                    android:id="@+id/buttonBianji"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12dp"
+                    android:background="@drawable/chat_recoder_bg"
+                    android:text="@string/string_zhizhi_bianji" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jifenxxxx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/person" >
+
+                <LinearLayout
+                    android:id="@+id/lianxiren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xiaoxi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_btn_sel_selector"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/textViewcontactNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jifen"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_myspace_text_black" />
+
+                    <TextView
+                        android:id="@+id/dengji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jifen"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="联系人"
+                        android:textColor="@color/color_myspace_text_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fensi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_btn_sel_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewfansNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jifen"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_myspace_text_black" />
+
+                    <TextView
+                        android:id="@+id/dengji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jifen"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="粉丝"
+                        android:textColor="@color/color_myspace_text_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/guanzhuderen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xiaoxi"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_btn_sel_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewfollowNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_myspace_text_black" />
+
+                    <TextView
+                        android:id="@+id/dengji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/jifen"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="关注的人"
+                        android:textColor="@color/color_myspace_text_black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/u100_normal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="@string/string_zhizhi_acountinfor"
+                    android:textColor="@color/color_text_white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewJinRu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="right"
+                    android:text="@string/string_zhizhi_jinru"
+                    android:textColor="#0000FF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_account_yu_e"
+                    android:textColor="@color/color_myspace_text_black" />
+
+                <TextView
+                    android:id="@+id/textViewamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:text="100"
+                    android:textColor="@color/color_myspace_text_black" />
+
+                <Button
+                    android:id="@+id/buttonchongzhi"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/chat_recoder_bg"
+                    android:text="@string/string_zhizhi_chongzhi" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/textViewpayTimesAndpayTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@color/color_myspace_text_black" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textViewpayTimesAndpayTotal"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_selector"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="详细"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@color/color_myspace_text_black" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textView1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/right_selector"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:text="详细"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jibenshuju"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gexing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/u100_normal"
+                    android:text="@string/string_zhizhi_base_infor"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_text_white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewonlineTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="在线时长："
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textViewringTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="通话时长："
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textViewregtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="注册时间："
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarstar5"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:isIndicator="true" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarstar4"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:isIndicator="true" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarstar3"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:isIndicator="true" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarstar2"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:isIndicator="true" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarstar1"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:isIndicator="true" />
+            </LinearLayout>
+
+            <!-- 学生的评语： -->
+
+            <LinearLayout
+                android:id="@+id/xueshengpingyu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ziwojieshao"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/u100_normal"
+                    android:text="@string/string_zhizhi_student_pingyu"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/color_text_white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:text="全部  5分  4分 3分 2分 1分"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="共43条 上一页                下一页"
+                    android:visibility="gone"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsContent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="5分：这个老师水平很高，教学态度也很好！"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsFrom1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="right"
+                    android:text="来自James  2012-05-12"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsContent2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="4分：这个老师水平很高，教学态度也很好！"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsFrom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="right"
+                    android:text="来自James  2012-05-12 "
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsContent3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="3分：这个老师水平很高，教学态度也很好"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsFrom3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="right"
+                    android:text="来自James  2012-05-12 "
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsContent4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2分：这个老师水平很高，教学态度也很好！"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsFrom4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="right"
+                    android:text="来自James  2012-05-12 "
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsContent5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1分：这个老师水平很高，教学态度也很好！"
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewCommentsFrom5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:gravity="right"
+                    android:text="来自James  2012-05-12 "
+                    android:textColor="@color/color_myspace_text_black"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff" />
+                
+                <RelativeLayout
+                    android:id="@+id/xueshengpingyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:text="共43条 "
+                        android:textColor="@color/color_myspace_text_black"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/buttonNextpage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/button_next_selector"
+                        android:text="下一页 " />
+
+                    <Button
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@id/buttonNextpage"
+                        android:background="@drawable/button_next_selector"
+                        android:text="上一页 " />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

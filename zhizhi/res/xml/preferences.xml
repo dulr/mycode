@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_sipaccount" >
+
+
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="@string/pref_enable_outbound_proxy_key"
+            android:selectable="true"
+            android:title="@string/pref_enable_outbound_proxy" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_preferences" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_autostart_key"
+            android:title="@string/pref_autostart" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_video_enable_key"
+            android:title="@string/pref_video_enable_title" />
+
+        <EditTextPreference
+            android:key="@string/pref_stun_server_key"
+            android:title="@string/pref_stun_server" >
+        </EditTextPreference>
+
+        <ListPreference
+            android:defaultValue="ask_for_outcall_interception"
+            android:entries="@array/pref_handle_outcall_values"
+            android:entryValues="@array/pref_handle_outcall_keys"
+            android:key="@string/pref_handle_outcall_key"
+            android:summary="@string/pref_handle_outcall_summarry"
+            android:title="@string/pref_handle_outcall" >
+        </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_audio" >
+        <CheckBoxPreference
+            android:key="@string/pref_echo_cancellation_key"
+            android:summary="@string/pref_echo_cancellation_summary"
+            android:title="@string/pref_echo_cancellation" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_echo_canceller_calibration_key"
+            android:title="@string/pref_echo_canceller_calibration" >
+        </CheckBoxPreference>
+
+        <PreferenceScreen
+            android:key="@string/pref_codecs_key"
+            android:title="@string/pref_codecs" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:enabled="false"
+                android:key="@string/pref_codec_speex16_key"
+                android:title="@string/pref_codec_speex16" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/pref_codec_speex8_key"
+                android:title="@string/pref_codec_speex8" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:enabled="false"
+                android:key="@string/pref_codec_ilbc_key"
+                android:shouldDisableView="true"
+                android:summary="@string/pref_ilbc_summary"
+                android:title="@string/pref_codec_ilbc" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/pref_codec_gsm_key"
+                android:title="@string/pref_codec_gsm" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/pref_codec_pcmu_key"
+                android:title="@string/pref_codec_pcmu" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/pref_codec_pcma_key"
+                android:title="@string/pref_codec_pcma" >
+            </CheckBoxPreference>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:dependency="@string/pref_video_enable_key"
+        android:shouldDisableView="true"
+        android:title="@string/pref_video" >
+        <CheckBoxPreference
+            android:dependency="@string/pref_video_enable_key"
+            android:key="@string/pref_video_use_front_camera_key"
+            android:title="@string/pref_video_use_front_camera_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_video_enable_key"
+            android:key="@string/pref_video_initiate_call_with_video_key"
+            android:summary="@string/pref_video_initiate_call_with_video"
+            android:title="@string/pref_video_initiate_call_with_video_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_video_enable_key"
+            android:key="@string/pref_video_automatically_share_my_video_key"
+            android:summary="@string/pref_video_automatically_share_my_video"
+            android:title="@string/pref_video_automatically_share_my_video_title" >
+        </CheckBoxPreference>
+
+        <PreferenceScreen
+            android:dependency="@string/pref_video_enable_key"
+            android:key="@string/pref_video_codecs_key"
+            android:shouldDisableView="true"
+            android:title="@string/pref_video_codecs_title" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="@string/pref_video_codec_h264_key"
+                android:title="@string/pref_video_codec_h264_title" >
+            </CheckBoxPreference>
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/pref_video_codec_mpeg4_key"
+                android:title="@string/pref_video_codec_mpeg4_title" >
+            </CheckBoxPreference>
+            <!--
+     			<CheckBoxPreference android:key="@string/pref_video_codec_h263_key"
+				android:title="@string/pref_video_codec_h263_title" android:enabled="false"
+				android:defaultValue="false" android:selectable="false"></CheckBoxPreference>
+            -->
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_advanced" >
+        <EditTextPreference
+            android:key="@string/pref_prefix_key"
+            android:title="@string/pref_prefix" >
+        </EditTextPreference>
+
+        <CheckBoxPreference
+            android:key="@string/pref_escape_plus_key"
+            android:title="@string/pref_escape_plus" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="@string/pref_debug_key"
+            android:title="@string/pref_debug" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

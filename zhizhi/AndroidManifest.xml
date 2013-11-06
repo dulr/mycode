@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhizhi"
+    android:installLocation="auto"
+    android:versionCode="1103"
+    android:versionName="1.1.3" >
+
+    <uses-sdk android:minSdkVersion="3" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    	
+    <!-- 悬浮窗(FloatingService) permission -->  
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />  
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/logo_linphone_57x57"
+        android:label="@string/app_name" >
+
+        <!-- zhizhi ui Start -->
+        <activity
+            android:name="org.linphone.zhizhiui.StartupActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.SettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ZhizhiYaoqingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.HelpActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ShaixuanActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.RegisterActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.RegisterTeacherActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.MyspaceActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.MainViewActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.IntroduceActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.AccountActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ChongzhiActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.TixianActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.JiaoyiMingxiActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ModifyLoginPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ModifyPayPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ModifyPersonInforActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.BankInfoActivity"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.ApplyToTeacherActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.CallEndActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.FrequentlyQuestionsActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.WodeFensiActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.XiaoxiActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.AboutZhizhiActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.SetCallPriceActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.zhizhiui.CallingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!-- zhizhi ui end -->
+
+        <activity
+            android:name="org.linphone.LinphoneActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.linphone.core.tutorials.TestVideoActivity"
+            android:enabled="false"
+            android:label="Video test"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.core.tutorials.TutorialHelloWorldActivity"
+            android:enabled="false"
+            android:label="Hello World" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.core.tutorials.TutorialRegistrationActivity"
+            android:enabled="false"
+            android:label="Registration" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.core.tutorials.TutorialBuddyStatusActivity"
+            android:enabled="false"
+            android:label="Buddy status" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.core.tutorials.TutorialChatRoomActivity"
+            android:enabled="false"
+            android:label="Chat Room" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.mediastreamer2.test.Ring"
+            android:enabled="false"
+            android:label="Ring+Echo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.linphone.LinphonePreferencesActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.linphone.DialerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.linphone.VideoCallActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.linphone.ContactPickerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.linphone.HistoryActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.linphone.AboutActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="org.linphone.LinphoneService" >
+        </service>
+
+        <receiver android:name="org.linphone.NetworkManager" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!--
+    receiver android:name="OutgoingCallReceiver" >
+		<intent-filter android:priority="0"><action android:name="android.intent.action.NEW_OUTGOING_CALL"></action>
+	</intent-filter>
+	</receiver
+        -->
+        <receiver android:name="org.linphone.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

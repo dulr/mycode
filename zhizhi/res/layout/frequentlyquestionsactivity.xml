@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background" >
+
+        <Button
+            android:id="@+id/buttonBack"
+            style="@style/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/string_zhizhi_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_zhizhi_frequentlyquestions"
+            android:textColor="@color/color_text_white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/string_zhizhi_qa1"
+                android:textColor="@color/color_text_black"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa2"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa3"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa4"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa5"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa6"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa7"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa8"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa9"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa10"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa11"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa12"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa13"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa14"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa15"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa16"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa17"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa18"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa19"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa20"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa21"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa22"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa23"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+             <TextView
+                android:id="@+id/textView25"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/string_zhizhi_qa24"
+                android:textColor="@color/color_text_black"
+                android:textSize="18dp" >
+            </TextView>
+            
+             <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa25"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa26"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa27"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa28"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa29"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa30"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa31"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/string_zhizhi_qa32"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:text="@string/string_zhizhi_qa33"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/string_zhizhi_qa34"
+                android:textColor="@color/color_text_black" >
+            </TextView>
+             
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

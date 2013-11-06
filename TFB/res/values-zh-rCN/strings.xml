@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">CSWIPER 读卡器 3.0.3</string>
+    <string name="app_name">个人刷</string>
+    <string name="CSwiperAppTitle">CSwiper 读卡器 3.0.3</string>
+    
+    <string name="enableSwipeButtonText">刷卡</string>
+    <string name="getKsnButtonText">读取KSN</string>
+    
+    <string name="labelText">卡资料</string>
+    <string name="formatIDLabelText">格式编号:</string>
+    <string name="macLabelText">MAC:</string>
+    <string name="masekdPANLabelText">基本账户号码:</string>
+    <string name="expiryDateLabelText">到期日:</string>
+    <string name="ksnLabelText">KSN:</string>
+    <string name="cardHolderLabelText">持卡人姓名:</string>
+    <string name="track1LengthLabelText">磁轨1资料长度:</string>
+    <string name="track2LengthLabelText">磁轨2资料长度:</string>
+    <string name="track3LengthLabelText">磁轨3资料长度:</string>
+    <string name="randomNumberLabelText">随机数:</string>
+    <string name="encTracksLabelText">加密的磁轨资料:</string>
+    <string name="tracksLabelText">磁轨资料:</string>
+    
+    <string name="GetKsnCompleted">完成读取KSN</string>
+    <string name="ReadingKsnData">读取KSN中&#8230;</string>
+    <string name="DecodeCompleted">完成解读卡资料</string>
+	<string name="ReadingCardData">读取卡资料中&#8230;</string>
+	<string name="BadSwipe">刷卡不良好</string>
+	<string name="CRCError">CRC错误</string>
+	<string name="CommunicationError">沟通不良</string>
+	<string name="UnknownDecodeError">不明的错误</string>
+	<string name="Interrupted">已中断</string>
+	<string name="Timeout">等待刷卡超时</string>
+	<string name="WaitingCardSwipe">等待刷卡中&#8230;</string>
+	<string name="WaitingForDevice">等待装置回应中&#8230;</string>
+	<string name="DecodingCardData">解读卡资料中&#8230;</string>
+	<string name="CSwiperPlugged">读卡器已插上</string>
+	<string name="CSwiperUnplugged">未插上读卡器</string>
+	<string name="STOP">停止</string>
+	<string name="CSwiperIsDetected">已侦测到读卡器</string>
+	<string name="CSwiperIsNotDetected">未侦测到读卡器</string>
+	<string name="Uploading">上传中&#8230;</string>
+	<string name="IncomingCallDetected">有来电!!</string>
+	<string name="UploadCompleted">上传成功</string>
+	<string name="UploadFailed">上传失败</string>
+    
+	<string name="CopyToClipboard">复制到剪贴板</string>
+	<string name="SendLog">发送记录</string>
+	<string name="FirmwareVersion">固件版本</string>
+	<string name="BatteryVoltage">电池电压</string>
+	
+</resources>

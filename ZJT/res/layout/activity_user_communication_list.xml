@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewUserNicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车友求助"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:id="@+id/linearLayoutTopQiuzhuFenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+                android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewTopQiuzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/title_mid_select"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="求助" />
+
+            <TextView
+                android:id="@+id/textViewTopFenxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+        android:background="@drawable/title_mid_unselect"
+                android:text="分享" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/User_msg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#919191" />
+
+        <TextView
+            android:id="@+id/User_msg_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tltlerect"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="#919191" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListViewUserCommunicationList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RelativeLayoutSend"
+        android:layout_below="@+id/RelativeLayoutHeader"
+        android:clickable="true"
+        android:divider="#f8f8ff"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/RelativeLayoutSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/textviewBottomQiuzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_small_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="求助" />
+
+        <TextView
+            android:id="@+id/textviewBottomFenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_small_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="分享" />
+
+        <TextView
+            android:id="@+id/textviewBottomWode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_small_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="我的" />
+
+        <TextView
+            android:id="@+id/textviewBottomShoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_small_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="收藏" />
+    </LinearLayout>
+
+</RelativeLayout>

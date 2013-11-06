@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageViewUserMsgHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_launcher"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewUserMsgContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageViewUserMsgHeader"
+            android:text="用户昵称"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/textViewUserMsgphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUserMsgContent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageViewUserMsgHeader"
+            android:src="@drawable/angry_face"
+            android:visibility="gone"
+            android:textColor="#FFFFFF" />
+
+       
+    </RelativeLayout>
+<ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBarSending"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textViewContent" />
+</LinearLayout>

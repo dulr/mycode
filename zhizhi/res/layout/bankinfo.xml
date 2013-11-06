@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/color_background"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/title_background">
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    style="@style/backButton"
+                    android:text="@string/string_zhizhi_back" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/string_zhizhi_bankinfor"
+                    android:textColor="@color/color_text_white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewXuanzeYinhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="选择银行"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/xuanZeYinhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewXuanzeYinhang"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewXuanzeYinhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡号："
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/bankCardID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewXuanzeYinhang"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewXuanzeYinhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="户名："
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/accountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewXuanzeYinhang"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewXuanzeYinhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开户行地址："
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/bankAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewXuanzeYinhang"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textViewLiru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bankAddress"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14dp"
+                    android:text="例如：中国工商银行北京市海淀区支行北京大学分理处"
+                    android:textColor="@color/color_text_black" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewLiru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kaihuhnagdizhi"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:text="以上信息请务必认真填写，如果信息有误，则有可能延误付款！"
+                android:textColor="@color/color_text_black" />
+
+            <Button
+                android:id="@+id/buttonConfirm"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="@string/string_zhizhi_queding" 
+        		android:layout_marginTop="10dp"
+        		android:layout_gravity="center_horizontal|center_vertical"  />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yaoqingStep1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewYaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="提示：直拨电话将让通话双方互相知道对方的手机号码，而且拨打一方将支付正常手机话费。您是否确认继续提交邀请？"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewYaoqingzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:text="您正在邀请Tom直接通过手机通话，请等待对方应答..."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ImageViewYaoqingzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:src="@drawable/u16_normal" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/buttonYaoqing"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="20dp"
+            android:text="邀请对方通话"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/buttonQuxiao"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="20dp"
+            android:text="取消"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yaoqingStep2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/zhengzaiyaoqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="Michael正向您提出直接手机通话的邀请..."
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ImageViewPersonImage"
+            android:layout_width="185dp"
+            android:layout_height="210dp"
+            android:src="@drawable/u2_normal" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/AboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="Michael"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="编号：33221"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="年龄： 34"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="性别：男"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="国籍： 中国"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="所在城市： 北京"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="英语水平：高级"
+                android:textColor="#000000"
+                android:textSize="14dp" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/AboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="提示：直拨电话将让通话双方互相知道对方的手机号码"
+            android:textColor="#ff0000"
+            android:textSize="14dp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/u112_normal" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/u111_normal" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/u9_normal" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/buttonJieshouYaoqing"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="接受邀请"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/buttonRejectYaoqing"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="拒绝"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yaoqingStep3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/AboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Tom拒绝了您的邀请"
+            android:textColor="#000000"
+            android:textSize="14dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonGuaDuanDianhua"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="120dp"
+            android:text="拒绝"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

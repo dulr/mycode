@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/color_background"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewCallTimeLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autoLink="web"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="本次通话时长：1小时30分钟23秒"
+                android:textColor="@color/color_text_black"
+                android:textSize="16dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="共花费：124.35元"
+                android:textColor="@color/color_text_black"
+                android:textSize="16dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="您的账户余额：231元"
+                android:textColor="@color/color_text_black"
+                android:textSize="16dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/AboutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="请对本次通话进行评价："
+                android:textColor="@color/color_text_black"
+                android:textSize="16dp" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_x="3px"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radiobutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="5分（非常满意）"
+                        android:textColor="@color/color_text_black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4分（比较满意）"
+                        android:textColor="@color/color_text_black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3分（满意）"
+                        android:textColor="@color/color_text_black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2分（一般）"
+                        android:textColor="@color/color_text_black"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1分（不满意）"
+                        android:textColor="@color/color_text_black"
+                        android:textSize="14dp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/chushengnian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="请输入您的评语...（填写则可获得积分）"
+                    android:textSize="14dp" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonQueDing"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_next_selector"
+                android:gravity="center"
+                android:text="@string/string_zhizhi_queding" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

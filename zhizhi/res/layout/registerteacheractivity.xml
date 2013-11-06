@@ -1,0 +1,1524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/applytoteacherStep1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/title_background" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="注册：第三步"
+                    android:textColor="@color/color_text_white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:text="@string/string_zhizhi_xingbie"
+                    android:textColor="@color/color_text_black" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroupSex"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="60dp"
+                    android:layout_x="3px"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonSexMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/string_zhizhi_man"
+                        android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonfeMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_women"
+                        android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_birthday"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/chushengnian"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/chushengyue"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_nation"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/guoji"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:text="@string/string_zhizhi_muqian_place"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/muqiansuozaidi"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+
+                    <!-- Preview: listitem=@android:layout/simple_spinner_item -->
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_nation_word"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/muyu"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_other_word"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/qitayuyan"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_chinese_lever"
+                    android:textSize="17dp"
+                    android:textColor="@color/color_text_black" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroupChineseLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/radiobutton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_zero_lever"
+                        android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_first_lever"
+                        android:textSize="14dp"
+                        android:checked="true"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_second_lever"
+                        android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_zhizhi_jingtong"
+                        android:textSize="14dp"
+                        android:textColor="@color/color_text_black" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/string_zhizhi_teacher_lever"
+                    android:textSize="16dp"
+                    android:textColor="@color/color_text_black" />
+
+                <Spinner
+                    android:id="@+id/jiaoxuejingyan"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/spinner1" >
+                </Spinner>
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxReadServiceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:text="我已阅读并接受本应用的服务条款 "
+                android:textColor="@color/color_text_black" />
+
+            <Button
+                android:id="@+id/buttonApplytoTeacherStep1Next"
+                android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|center_vertical" 
+            		android:layout_marginTop="20dp"
+            		android:gravity="center"
+            		android:layout_marginBottom="20dp"
+            		android:textSize="16dp"
+                    android:background="@drawable/button_next_selector"
+                    android:text="立即注册" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_background" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="用户注册成功"
+                android:textColor="@color/color_text_white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="注册成功!"
+            android:textSize="17dp"
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:textSize="18dp"
+            android:text="编号：32134"
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+             android:textSize="18dp"
+            android:text="昵称：Micheal"
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+             android:textSize="18dp"
+            android:text="密码：123432"
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:text="您现在可以普通用户身份登录。"
+            android:textSize="17dp"
+            android:textColor="@color/color_text_black" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight = "10dp"
+            android:textSize="16dp"
+            android:text="如要以教师身份为学生提供培训服务，您需要进一步完善资料，并提交教师资格申请！"
+            android:textColor="@color/color_text_black" />
+
+        <Button
+            android:id="@+id/buttonApplytoTeacherStep2Wanshanziliao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text="进一步完善资料" />
+
+        <Button
+            android:id="@+id/buttonApplytoTeacherStep2PutongDenglu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="跳过并以普通身份登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_background" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="完善教师资料：头像"
+                android:textColor="@color/color_text_white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewStep2"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="#00ff00" />
+
+            <ImageView
+                android:id="@+id/imageViewStep3"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+
+            <ImageView
+                android:id="@+id/imageViewStep4"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+
+            <ImageView
+                android:id="@+id/imageViewStep5"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+
+            <ImageView
+                android:id="@+id/imageViewStep6"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=" 请上传您的头像"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_text_black" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonBendiZhaopian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="本地照片" />
+
+                <Button
+                    android:id="@+id/buttonPaizhaoShangchuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/buttonBendiZhaopian"
+                    android:text="拍照上传" />
+            </RelativeLayout>
+            
+            <ImageView
+                android:id="@+id/personImageHeader"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/u39_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonApplytoTeacherStep3Next"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_next_selector"
+                    android:gravity="center"
+                    android:text="下一步" />
+
+                <TextView
+                    android:id="@+id/textviewTiaoGuoTouxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_alignParentRight="true"
+                    android:text="跳过"
+                    android:textColor="#0000ff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_background" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="完善教师资料：个人证件"
+                android:textColor="@color/color_text_white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewStep2"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="#00ff00" />
+
+            <ImageView
+                android:id="@+id/imageViewStep3"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="#00ff00" />
+
+            <ImageView
+                android:id="@+id/imageViewStep4"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+
+            <ImageView
+                android:id="@+id/imageViewStep5"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+
+            <ImageView
+                android:id="@+id/imageViewStep6"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:text=" 申请成为教师：第三步
+请上传您的个人证件（身份证/护照/驾照……此为系统信息备份，对其他用户保密）
+"
+                android:textColor="@color/color_text_black" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=" 请上传您的头像"
+                android:textColor="@color/color_text_black"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonBendiZhaopianPersonalCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="本地照片" />
+
+                <Button
+                    android:id="@+id/buttonPaizhaoShangchuanPersonalCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/buttonBendiZhaopianPersonalCertificate"
+                    android:text="拍照上传" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewPersonalCertificate"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/u41_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonApplytoTeacherStep4Next"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_next_selector"
+                    android:text="下一步" />
+
+                <TextView
+                    android:id="@+id/textviewShangyiBuPersonZhengjian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/buttonWanchengZiliaoNext"
+                    android:text="上一步"
+                    android:textColor="#0000ff" />
+                 <TextView
+                    android:id="@+id/textviewTiaoGuoPersonZhengjian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="跳过"
+                    android:textColor="#0000ff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_background">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="完善教师资料：教师资格证"
+                android:textColor="@color/color_text_white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewStep2"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="#00ff00" />
+
+            <ImageView
+                android:id="@+id/imageViewStep3"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="#00ff00" />
+
+            <ImageView
+                android:id="@+id/imageViewStep4"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="#00ff00" />
+
+            <ImageView
+                android:id="@+id/imageViewStep5"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+
+            <ImageView
+                android:id="@+id/imageViewStep6"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:background="@color/color_title_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:text="是否拥有教师资格证（TEFL/TESOL/TESL）？"
+                android:textColor="@color/color_text_black" />
+
+            <RelativeLayout
+                android:id="@+id/nichaneg"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <RadioGroup
+                    android:id="@+id/radiogroupJiaosheZiGezheng1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_x="3px"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonJiaosheZiGezheng1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="有"
+                        android:textColor="@color/color_text_black" />
+
+                    <RadioButton
+                        android:id="@+id/radiobuttonJiaosheZiGezheng2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="无"
+                        android:textColor="@color/color_text_black" />
+                </RadioGroup>
+            </RelativeLayout>
+       <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonBendiZhaopianTeacherCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="invisible"
+                    android:text="本地照片" />
+
+                <Button
+                    android:id="@+id/buttonPaizhaoShangchuanTeacherCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/buttonBendiZhaopianTeacherCertificate"
+                    android:visibility="invisible"
+                    android:text="拍照上传" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageViewTeacherCertificate"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                android:background="@drawable/u41_normal" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/buttonApplytoTeacherStep5Next"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                     android:background="@drawable/button_next_selector"
+                    android:text="下一步" />
+
+                <TextView
+                    android:id="@+id/textviewShangYibuTeacherCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/buttonWanchengZiliaoNext"
+                    android:text="上一步"
+                    android:textColor="#0000ff" />
+
+                <TextView
+                    android:id="@+id/textviewTiaoGuoTeacherCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/buttonWanchengZiliaoNext"
+                    android:text="跳过"
+                    android:textColor="#0000ff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/title_background">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="完善教师资料：基本信息"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageViewStep2"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep3"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep4"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep5"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep6"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_title_background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/nichaneg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="学历："
+                            android:textSize="16dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <Spinner
+                            android:id="@+id/xueli"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@+id/spinner1" >
+                        </Spinner>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/nichaneg"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="专业："
+                            android:textSize="16dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <EditText
+                            android:id="@+id/editTextZhuanYe"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:singleLine="true"
+                            android:layout_marginRight="20dp" >
+                        </EditText>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/nichaneg"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="职业："
+                            android:textSize="16dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <EditText
+                            android:id="@+id/editTextZhiYe"
+                            android:layout_width="190dp"
+                            android:singleLine="true"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp" >
+                        </EditText>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/techang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text=" 特长："
+                            android:textSize="16dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton411"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="英语口语"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton412"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="阅读和写作"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton413"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="语法"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton414"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="发音"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton415"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="托福"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton416"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="雅思"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton417"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="商务英语"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/techang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="可教学生类型："
+                            android:textSize="16dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton421"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="幼儿园"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton422"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="小学生"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton423"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="初中生"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton424"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="高中生"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton425"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="大学生"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton426"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="成年人"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton427"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="商务人士"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/techang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:text="可教学生程度："
+                            android:textSize="16dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton431"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="初级"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton432"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="中级"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+
+                        <CheckBox
+                            android:id="@+id/radiobutton433"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="高级"
+                            android:textSize="14dp"
+                            android:textColor="@color/color_text_black" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/buttonApplytoTeacherStep6Next"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:background="@drawable/button_next_selector"
+                            android:text="下一步" />
+
+                        <TextView
+                            android:id="@+id/textviewShangYibuJibenxinxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toLeftOf="@+id/buttonWanchengZiliaoNext"
+                            android:text="上一步"
+                            android:textSize="16dp"
+                            android:textColor="#0000ff" />
+
+                        <TextView
+                            android:id="@+id/textviewTiaoGuojinBenxinxi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/buttonWanchengZiliaoNext"
+                            android:text="跳过"
+                            android:textSize="16dp"
+                            android:textColor="#0000ff" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/title_background">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="完善教师资料：个人简介"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageViewStep1"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep2"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep3"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep4"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                    <ImageView
+                        android:id="@+id/imageViewStep5"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"
+                        android:background="#00ff00" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="个人简介"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_text_black" />
+
+                <EditText
+                    android:id="@+id/editTextPersonResume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:ems="10"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine" >
+
+                    <requestFocus />
+                </EditText>
+                <TextView
+                    android:id="@+id/textviewShangYibugeRenJianjie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/buttonWanchengZiliaoNext"
+                    android:text="上一步"
+                    android:textSize="16dp"
+                    android:textColor="#0000ff" />
+
+                <Button
+                    android:id="@+id/buttonApplytoTeacherStep7Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="17dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="提交教师资料" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:text=" 为提高您的通过率，请确保您已经提供完备资料。
+"
+                    android:textColor="@color/color_text_black" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applytoteacherStep8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/title_background" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="资料提交成功"
+                        android:textColor="@color/color_text_white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text=" 
+
+
+" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:text=" 您申请教师资格的详细资料已经提交，请等待审核和认证。"
+                    android:textColor="@color/color_text_black" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:text=" 预计24小时之内您将收到反馈，请耐心等待，谢谢！
+"
+                    android:textColor="@color/color_text_black" />
+
+                <Button
+                    android:id="@+id/buttonApplytoTeacherStep8Next"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/string_zhizhi_queding" 
+            		android:layout_width="80dp"
+            		android:layout_height="30dp"
+            		android:layout_gravity="center_horizontal|center_vertical" 
+            		android:layout_marginTop="20dp"
+            		 android:textSize="17dp"
+            		android:background="@drawable/button_next_selector"
+            />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

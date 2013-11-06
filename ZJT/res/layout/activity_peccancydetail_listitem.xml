@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.zjtproject.ViolationsListDetailItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:gravity="center"
+    android:background="@drawable/weizhanginfor_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewViolationsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="时间：2012-12-12 10.0.0" />
+
+            <TextView
+                android:id="@+id/textViewViolationsAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="地点：北京 市 " />
+
+            <TextView
+                android:id="@+id/textViewViolationsID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="代码：18888 违反禁令指示" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewWeizhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="扣分:" />
+
+            <TextView
+                android:id="@+id/textViewViolationsPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewWeizhangRiqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="罚款:" />
+
+            <TextView
+                android:id="@+id/textViewViolationsMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewWeizhangRiqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="处理 :" />
+
+            <TextView
+                android:id="@+id/textViewViolationsDispose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="未处理" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textViewWeizhangRiqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="缴款:" />
+
+            <TextView
+                android:id="@+id/textViewViolationsCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="未缴款" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.example.zjtproject.ViolationsListDetailItem>

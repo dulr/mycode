@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+     <RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/title" >
+
+       	 	<TextView
+            	android:id="@+id/textViewMessage"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true"
+            	android:gravity="center"
+            	android:textSize="25dp"
+            	android:textColor="#FFFFFF"
+            	android:text="信息" />
+
+        	<TextView
+            	android:id="@+id/UserList_back"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+            	android:layout_marginLeft="10dp"
+            	android:background="@drawable/back"
+            	android:gravity="center"
+            	android:clickable="true"
+            	android:focusable="true"
+            	android:textColor="#919191"
+            	android:text="返回" />
+    	</RelativeLayout>
+    
+     
+     <ListView
+            android:id="@+id/ListViewUserList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="#f8f8ff"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+</LinearLayout>

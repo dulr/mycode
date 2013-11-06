@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dingbu_02" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/jr_sk_01"
+            android:gravity="center"
+            android:text="收款"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/fanhui_03"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="返回" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout0"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="缴费公司"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText_Danwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/kuang_13"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="果果"
+            android:hint="果果" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp" >
+
+        <TextView
+            android:id="@+id/Login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="收款金额"
+            android:textColor="#919191"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText_Jiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:background="@drawable/kuang_13"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="1000"
+            android:hint="1000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonQueDing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/queding"
+        android:text="确定"
+        android:textSize="18dp" />
+
+</RelativeLayout>
